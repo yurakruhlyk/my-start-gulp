@@ -1,0 +1,42 @@
+/* --------- mixins --------- */
+
+// Clearfix mixin
+@mixin clearfix 
+    &:before,
+    &:after 
+        content: ""
+        display: table
+
+    &:after 
+        clear: both
+    
+// Placeholder color mixin
+@mixin placecolor($color) 
+    &::-webkit-input-placeholder 
+        color: $color
+    
+    &:-moz-placeholder 
+        color: $color
+    
+    &::-moz-placeholder 
+        color: $color
+    
+    &:-ms-input-placeholder 
+        color: $color
+
+//Centering
+@mixin centerer-xy()
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+@mixin centerer-x()
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+
+@mixin centerer-y()
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)

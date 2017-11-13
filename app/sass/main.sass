@@ -1,0 +1,42 @@
+@import 'vars'
+@import 'mixins'
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+body
+	background: #F6F8F8
+	font-size: 16px
+	font-family: $default-font
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+
+.start-container
+  text-align: center
+  margin-top: 150px
+  font-size: 1.5rem
+
+.start-title
+	color: $default-color
+	margin-bottom: 50px
+
+.logo
+	height: 200px
+	animation: logo-spin infinite 20s linear
+
+@keyframes logo-spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.start-link
+	font-weight: 700
+	text-decoration: none
+	color: #110D23
+	&:hover
+		color: #586172
+		transition: 0.5s
