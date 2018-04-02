@@ -9,7 +9,7 @@ My start template gulp
 
 1. Clone reposetory `git clone https://github.com/murove1/my-start-gulp`;
 2. Install node_modules `npm i`;
-4. Run `gulp`.
+3. Run `gulp`.
 
 # Gulp task
 
